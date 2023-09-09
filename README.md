@@ -1,2 +1,0 @@
-# FullStack
-Let's learn!
