@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { GlobalStyle } from './fonts';
 class Collatz extends Component { 
     constructor(props) {
         super(props);
