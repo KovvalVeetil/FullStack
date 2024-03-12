@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { GlobalStyle } from './fonts';
+//import { GlobalStyle } from './fonts';
 class Collatz extends Component { 
     constructor(props) {
         super(props);
@@ -63,7 +63,7 @@ const SpecialListItem = styled.li`
 `;
 class App extends Component { 
     render() {
-        const number = 17; 
+        const number = 20; 
         const wikilink ='https://en.wikipedia.org/wiki/Collatz_conjecture';
         return (
         <GridDiv>
