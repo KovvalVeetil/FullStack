@@ -1,6 +1,5 @@
 // collatz.stories.js
 import React from 'react';
-import { fn } from '@storybook/test';
 import { Collatz } from '../App.js';
 
 export default {
@@ -18,3 +17,4 @@ export const seeMultiple = () => <div>
         { [ 17, 22, 57 ].map(x => <Collatz number={x} />) }
     </div>;
 seeMultiple.story = { name: 'See multiple' };
+
