@@ -1,8 +1,15 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+// App.test.js
+import React from 'react';
+import renderer from 'react-test-renderer';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+import 'jest-styled-components';
+import {Collatz} from './App';
+
+// Creating snapshot test of rendered items
+it('snapshots Collatz with test renderer', () => {
+    const collatz = renderer.create(<Collatz number={ 13 } />)
+
+    // possible component interaction here
+    let tree = collatz.toJSON();
+    expect(tree).toMatchSnapshot();
 });
